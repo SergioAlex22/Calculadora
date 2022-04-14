@@ -1,4 +1,4 @@
-<H1> Proyecto Principal </H1>
+<H1> Calculadora de Promedios </H1>
 <img src="https://img.shields.io/badge/Estado-Dev-green">
 <p>
 Este es mi primer proyecto
