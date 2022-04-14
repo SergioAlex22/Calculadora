@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{A2F40FBF-0A32-4BBC-B7C8-1E5817A0AAD0}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="CalculadoraProm.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Agendadb\AgendaDB.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Project11\Project1.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="CalculadoraProm">
+        <MSBuild Projects="CalculadoraProm.dproj"/>
+    </Target>
+    <Target Name="CalculadoraProm:Clean">
+        <MSBuild Projects="CalculadoraProm.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CalculadoraProm:Make">
+        <MSBuild Projects="CalculadoraProm.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="AgendaDB">
+        <MSBuild Projects="..\Agendadb\AgendaDB.dproj"/>
+    </Target>
+    <Target Name="AgendaDB:Clean">
+        <MSBuild Projects="..\Agendadb\AgendaDB.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AgendaDB:Make">
+        <MSBuild Projects="..\Agendadb\AgendaDB.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Project1">
+        <MSBuild Projects="..\Project11\Project1.dproj"/>
+    </Target>
+    <Target Name="Project1:Clean">
+        <MSBuild Projects="..\Project11\Project1.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project1:Make">
+        <MSBuild Projects="..\Project11\Project1.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="CalculadoraProm;AgendaDB;Project1"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="CalculadoraProm:Clean;AgendaDB:Clean;Project1:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="CalculadoraProm:Make;AgendaDB:Make;Project1:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
