@@ -4,4 +4,4 @@
 El presente programa cumple la función de registrar los datos y notas de los alumnos
   y también de calcular el promedio de cada uno.
 </p>
-<img src="">
+
