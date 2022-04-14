@@ -1,5 +1,5 @@
 <H1> Calculadora de Promedios </H1>
-<img src="https://img.shields.io/badge/Estado-Dev-green">
+<img src="https://img.shields.io/badge/Ver-1.0.0-green">
 <p>
 Este es mi primer proyecto
 </p>
