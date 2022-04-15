@@ -1,0 +1,4 @@
+[Datos]
+Codigo=123434
+Nombre=sergio
+Horas=5

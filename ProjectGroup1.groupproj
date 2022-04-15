@@ -6,12 +6,6 @@
         <Projects Include="CalculadoraProm.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="..\Agendadb\AgendaDB.dproj">
-            <Dependencies/>
-        </Projects>
-        <Projects Include="..\Project11\Project1.dproj">
-            <Dependencies/>
-        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -29,32 +23,14 @@
     <Target Name="CalculadoraProm:Make">
         <MSBuild Projects="CalculadoraProm.dproj" Targets="Make"/>
     </Target>
-    <Target Name="AgendaDB">
-        <MSBuild Projects="..\Agendadb\AgendaDB.dproj"/>
-    </Target>
-    <Target Name="AgendaDB:Clean">
-        <MSBuild Projects="..\Agendadb\AgendaDB.dproj" Targets="Clean"/>
-    </Target>
-    <Target Name="AgendaDB:Make">
-        <MSBuild Projects="..\Agendadb\AgendaDB.dproj" Targets="Make"/>
-    </Target>
-    <Target Name="Project1">
-        <MSBuild Projects="..\Project11\Project1.dproj"/>
-    </Target>
-    <Target Name="Project1:Clean">
-        <MSBuild Projects="..\Project11\Project1.dproj" Targets="Clean"/>
-    </Target>
-    <Target Name="Project1:Make">
-        <MSBuild Projects="..\Project11\Project1.dproj" Targets="Make"/>
-    </Target>
     <Target Name="Build">
-        <CallTarget Targets="CalculadoraProm;AgendaDB;Project1"/>
+        <CallTarget Targets="CalculadoraProm"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="CalculadoraProm:Clean;AgendaDB:Clean;Project1:Clean"/>
+        <CallTarget Targets="CalculadoraProm:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="CalculadoraProm:Make;AgendaDB:Make;Project1:Make"/>
+        <CallTarget Targets="CalculadoraProm:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

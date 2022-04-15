@@ -1,0 +1,109 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 592
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object Panel1: TPanel
+    Position.X = 24.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 337.000000000000000000
+    Size.Height = 545.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object titulo: TLabel
+      AutoSize = True
+      StyledSettings = [FontColor]
+      Position.Y = -8.000000000000000000
+      Size.Width = 410.399993896484400000
+      Size.Height = 20.799999237060550000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Times New Roman'
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'CALCULADORA DE PROMEDIOS'
+      TabOrder = 1
+    end
+    object codigo: TLabel
+      Position.X = 48.000000000000000000
+      Position.Y = 104.000000000000000000
+      Size.Width = 249.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Codigo del alumno:'
+      TabOrder = 4
+    end
+    object nombre: TLabel
+      Position.X = 48.000000000000000000
+      Position.Y = 184.000000000000000000
+      Size.Width = 169.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Nombre del alumno:'
+      TabOrder = 3
+    end
+    object horas: TLabel
+      Position.X = 48.000000000000000000
+      Position.Y = 284.000000000000000000
+      Size.Width = 169.000000000000000000
+      Size.Height = 27.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Horas semanales:'
+      TabOrder = 2
+    end
+    object textCodigo: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 5
+      Position.X = 48.000000000000000000
+      Position.Y = 129.000000000000000000
+      Size.Width = 209.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object textNombre: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 6
+      Position.X = 48.000000000000000000
+      Position.Y = 215.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object textHoras: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 7
+      Position.X = 48.000000000000000000
+      Position.Y = 335.000000000000000000
+      Size.Width = 209.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object registrar: TButton
+      Position.X = 48.000000000000000000
+      Position.Y = 408.000000000000000000
+      Size.Width = 177.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 8
+      Text = 'Registrar '
+      OnClick = registrarClick
+    end
+    object Label1: TLabel
+      AutoSize = True
+      StyledSettings = [FontColor]
+      Position.Y = 51.000000000000000000
+      Size.Width = 410.399993896484400000
+      Size.Height = 20.800003051757810000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Times New Roman'
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'REGISTRO DE ALUMNO'
+      TabOrder = 0
+    end
+  end
+end

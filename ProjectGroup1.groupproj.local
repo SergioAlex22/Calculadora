@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions/>
+  <Transactions>
+    <Transaction>2022/04/14 17:00:39.754,C:\Users\SERGIO  ALEXANDER\Documents\Embarcadero\Studio\Projects\CalculadoraProm\ProjectGroup1.groupproj=C:\Users\SERGIO  ALEXANDER\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj</Transaction>
+  </Transactions>
   <Default.Personality>
-    <Projects ActiveProject="C:\Users\SERGIO  ALEXANDER\Documents\Embarcadero\Studio\Projects\Project11\Project1.dproj"/>
+    <Projects ActiveProject="C:\Users\SERGIO  ALEXANDER\Documents\Embarcadero\Studio\Projects\CalculadoraProm\CalculadoraProm.dproj"/>
   </Default.Personality>
 </BorlandProject>
