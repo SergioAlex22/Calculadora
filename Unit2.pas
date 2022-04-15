@@ -4,7 +4,7 @@ interface
 
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,inifiles,
   FMX.Controls.Presentation, FMX.StdCtrls, FMX.Edit;
 
 type
@@ -23,11 +23,12 @@ type
   private
     { Private declarations }
   public
-    { Public declarations }
+    procedure crearDatos;
   end;
 
 var
   Form2: TForm2;
+  ArchivoDatos : TIniFile;
 
 implementation
 
@@ -35,8 +36,17 @@ implementation
 
 uses Unit3;
 
+procedure TForm2.crearDatos;
+begin
+     ArchivoDatos := TIniFile.Create(ExtractFilePath(ParamStr(0)) + '\Datos1.txt');
+end;
+
 procedure TForm2.registroClick(Sender: TObject);
 begin
+     ArchivoDatos.WriteString('Datos','Curso',textCurso.Text);
+     ArchivoDatos.WriteString('Datos','PorcentajeMC',textMC.Text);
+     ArchivoDatos.WriteString('Datos','PocentajeEF',textEF.Text);
+     ArchivoDatos.WriteString('Datos','PorcentajePP',txtPP.Text);
      Form3.show;
 end;
 

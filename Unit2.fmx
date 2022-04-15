@@ -55,7 +55,7 @@ object Form2: TForm2
     Position.X = 16.000000000000000000
     Position.Y = 199.000000000000000000
     Size.Width = 113.000000000000000000
-    Size.Height = 32.000000000000000000
+    Size.Height = 26.000000000000000000
     Size.PlatformDefault = False
   end
   object PorcEF: TLabel

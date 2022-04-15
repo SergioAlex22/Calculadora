@@ -1,4 +1,11 @@
 [Datos]
-Codigo=123434
-Nombre=sergio
-Horas=5
+Codigo=12341423
+Nombre=ade
+Horas=4
+Curso=mate
+PorcentajeMC=25
+PocentajeEF=35
+PorcentajePP=40
+NotaMC=13
+NotaEF=11
+NotaPP=15
