@@ -20,6 +20,7 @@ type
     txtPP: TEdit;
     registro: TButton;
     procedure registroClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -38,7 +39,12 @@ uses Unit3;
 
 procedure TForm2.crearDatos;
 begin
-     ArchivoDatos := TIniFile.Create(ExtractFilePath(ParamStr(0)) + '\Datos1.txt');
+     ArchivoDatos := TIniFile.Create(ExtractFilePath(ParamStr(0)) + '\Datos.txt');
+end;
+
+procedure TForm2.FormCreate(Sender: TObject);
+begin
+     crearDatos;
 end;
 
 procedure TForm2.registroClick(Sender: TObject);
@@ -47,7 +53,7 @@ begin
      ArchivoDatos.WriteString('Datos','PorcentajeMC',textMC.Text);
      ArchivoDatos.WriteString('Datos','PocentajeEF',textEF.Text);
      ArchivoDatos.WriteString('Datos','PorcentajePP',txtPP.Text);
-     Form3.show;
+     Form3.ShowModal;
 end;
 
 end.
