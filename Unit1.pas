@@ -57,6 +57,7 @@ begin
      ArchivoDatos.WriteString('Datos','Nombre',textNombre.Text);
      ArchivoDatos.WriteString('Datos','Horas',textHoras.Text);
      Form2.ShowModal;
+     Form1.Close;
 end;
 
 end.

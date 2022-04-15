@@ -29,20 +29,30 @@ object Form4: TForm4
     Position.X = 40.000000000000000000
     Position.Y = 248.000000000000000000
     Size.Width = 217.000000000000000000
-    Size.Height = 44.000000000000000000
+    Size.Height = 33.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 2
     Text = 'Registrar nuevo alumno'
     OnClick = newRegistroClick
   end
   object exit: TButton
-    Position.X = 80.000000000000000000
-    Position.Y = 316.000000000000000000
-    Size.Width = 121.000000000000000000
-    Size.Height = 37.000000000000000000
+    Position.X = 40.000000000000000000
+    Position.Y = 337.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 33.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 3
     Text = 'Salir'
     OnClick = exitClick
+  end
+  object return: TButton
+    Position.X = 40.000000000000000000
+    Position.Y = 296.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Regresar'
+    OnClick = returnClick
   end
 end

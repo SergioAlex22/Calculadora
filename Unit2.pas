@@ -19,8 +19,10 @@ type
     PorcPP: TLabel;
     txtPP: TEdit;
     registro: TButton;
+    return: TButton;
     procedure registroClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure returnClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -35,7 +37,7 @@ implementation
 
 {$R *.fmx}
 
-uses Unit3;
+uses Unit3, Unit1;
 
 procedure TForm2.crearDatos;
 begin
@@ -54,6 +56,12 @@ begin
      ArchivoDatos.WriteString('Datos','PocentajeEF',textEF.Text);
      ArchivoDatos.WriteString('Datos','PorcentajePP',txtPP.Text);
      Form3.ShowModal;
+
+end;
+
+procedure TForm2.returnClick(Sender: TObject);
+begin
+     Form1.showmodal;
 end;
 
 end.

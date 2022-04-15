@@ -17,8 +17,10 @@ type
     notaPP: TLabel;
     txtnotaPP: TEdit;
     prom: TButton;
+    return: TButton;
     procedure promClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure returnClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -33,7 +35,12 @@ implementation
 
 {$R *.fmx}
 
-uses Unit4;
+uses Unit4, Unit2;
+
+procedure TForm3.returnClick(Sender: TObject);
+begin
+     Form2.showmodal;
+end;
 
 procedure TForm3.crearDatos;
 begin
@@ -51,6 +58,7 @@ begin
      ArchivoDatos.WriteString('Datos','NotaEF',txtnotaEF.Text);
      ArchivoDatos.WriteString('Datos','NotaPP',txtnotaPP.Text);
      Form4.show;
+
 end;
 
 end.

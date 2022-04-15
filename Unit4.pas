@@ -13,8 +13,10 @@ type
     nota: TLabel;
     newRegistro: TButton;
     exit: TButton;
+    return: TButton;
     procedure newRegistroClick(Sender: TObject);
     procedure exitClick(Sender: TObject);
+    procedure returnClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -28,7 +30,7 @@ implementation
 
 {$R *.fmx}
 
-uses Unit1;
+uses Unit1, Unit3;
 
 procedure TForm4.exitClick(Sender: TObject);
 begin
@@ -39,6 +41,12 @@ end;
 procedure TForm4.newRegistroClick(Sender: TObject);
 begin
      Form1.show;
+end;
+
+procedure TForm4.returnClick(Sender: TObject);
+begin
+     Form3.showmodal;
+     close;
 end;
 
 end.
