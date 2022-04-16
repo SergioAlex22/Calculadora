@@ -39,6 +39,11 @@ implementation
 
 uses Unit3, Unit1;
 
+procedure TForm2.returnClick(Sender: TObject);
+begin
+     Form1.showmodal;
+end;
+
 procedure TForm2.crearDatos;
 begin
      ArchivoDatos := TIniFile.Create(ExtractFilePath(ParamStr(0)) + '\Datos.txt');
@@ -58,10 +63,4 @@ begin
      Form3.ShowModal;
 
 end;
-
-procedure TForm2.returnClick(Sender: TObject);
-begin
-     Form1.showmodal;
-end;
-
 end.

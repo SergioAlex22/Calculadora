@@ -21,6 +21,7 @@ type
     procedure promClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure returnClick(Sender: TObject);
+    procedure curso1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -45,6 +46,11 @@ end;
 procedure TForm3.crearDatos;
 begin
      ArchivoDatos := TIniFile.Create(ExtractFilePath(ParamStr(0)) + '\Datos.txt');
+end;
+
+procedure TForm3.curso1Click(Sender: TObject);
+begin
+     ShowMessage('textCurso');
 end;
 
 procedure TForm3.FormCreate(Sender: TObject);

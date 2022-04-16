@@ -16,6 +16,7 @@ object Form3: TForm3
     Size.Height = 33.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
+    OnClick = curso1Click
   end
   object notaMC: TLabel
     Position.X = 32.000000000000000000
